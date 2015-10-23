@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="GitHub Tutorial : Git good on GitHub">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>GitHub Tutorial</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/johnr5850/github-tutorial">View on GitHub</a>
+
+          <h1 id="project_title">GitHub Tutorial</h1>
+          <h2 id="project_tagline">Git good on GitHub</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/johnr5850/github-tutorial/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/johnr5850/github-tutorial/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by John Ruan</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p>Although Git and Github are similar to each other in name, they both actually accomplish different tasks. 
+Git is used for version control and helps on your local repository, while Github is used for collaboration 
+and cloud storage. Github does not require Git to function.</p>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<h4>
+<a id="creating-a-github-account" class="anchor" href="#creating-a-github-account" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating a Github account</h4>
+
+<p>By creating a github account, you can save your files in the cloud and sharing gets much simpler. This also sets 
+you up for transferring/updating your local repository to a remote repository in Github.</p>
+
+<h4>
+<a id="making-a-repository-on-github" class="anchor" href="#making-a-repository-on-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Making a repository on Github</h4>
+
+<p>What you will need to do on Github is making a repository with the <strong>same exact name(case-sensitive)</strong> as the file(s)
+you are using. Keep in mind that one misplaced character in either repository will cause Github/Git to not recognize
+that both of these repo's correlate with each other.</p>
+
+<h4>
+<a id="ssh-keys" class="anchor" href="#ssh-keys" aria-hidden="true"><span class="octicon octicon-link"></span></a>SSH Keys</h4>
+
+<p>SSH stands for "secure shell," and the SSH key is a long "ID" to clone a remote repository into your local machine.
+<strong>Every key is unique</strong>, so copying and pasting your key after typing "git clone" in your console will copy your files 
+only.</p>
+
+<h4>
+<a id="git-config-username-or-useremail" class="anchor" href="#git-config-username-or-useremail" aria-hidden="true"><span class="octicon octicon-link"></span></a>git config user.name OR user.email</h4>
+
+<p>The command in the header shown directly above is to basically "mark this as <em>your project</em>." Doing this for 1 time
+will mark the repository as yours, so you won't be needing to write it again.</p>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<h4>
+<a id="git-init-ing-your-repository" class="anchor" href="#git-init-ing-your-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a>"git init"-ing your repository</h4>
+
+<p><code>git init</code> will allow you to "initialize" your folder(s)/file(s). What this means is that the file(s) are ready to
+be used by other git commands, leading you to be able to upload your file(s) to github.</p>
+
+<h4>
+<a id="git-add-git-commit-and-git-push" class="anchor" href="#git-add-git-commit-and-git-push" aria-hidden="true"><span class="octicon octicon-link"></span></a>"git add", "git commit", and "git push"</h4>
+
+<p><code>git add</code> will add the files specified after that command to the "stage," which means the file(s) will be ready to 
+be commited. This leads us to <code>git commit</code>, which confirms the saves for that file, meaning it is ready to be 
+uploaded to github with <code>git push</code>. But first, you will need to do this line of code to your repository that you 
+want to push  "<code>git push -u origin master</code>". What this line does is that it sets up the area you want to push the
+files so that simply doing <code>git push</code> will push the file(s) into Github.</p>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<h4>
+<a id="commands" class="anchor" href="#commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Commands</h4>
+
+<h5>
+<a id="below-you-will-find-a-list-of-commands-and-what-they-do" class="anchor" href="#below-you-will-find-a-list-of-commands-and-what-they-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>Below, you will find a list of commands, and what they do.</h5>
+
+<ul>
+<li>
+<code>git init</code> = command line start</li>
+<li>
+<code>git status</code> = see which files have been edited(red) ; file(s) ready to be committed(green)</li>
+<li>
+<code>git add file.txt</code> = add file(s) to be committed</li>
+<li>
+<code>git add .</code> = adds current directory("." can be replaced with a file name or directory command)</li>
+<li>
+<code>git commit -a “short/specific message”</code> = adding the file to a "confirmed" state</li>
+<li>
+<code>git log</code> = see your past commits</li>
+<li>
+<code>git diff</code> = see differences between versions</li>
+<li>
+<code>git push -u origin master</code>
+
+<ul>
+<li>push = send commits from local repo to remote repo</li>
+<li>-u = “upstream” remembers which remote repo and branch used previously, saves it.</li>
+</ul>
+</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">GitHub Tutorial maintained by <a href="https://github.com/johnr5850">johnr5850</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
