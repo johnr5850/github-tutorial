@@ -45,7 +45,7 @@ files so that simply doing `git push` will push the file(s) into Github.
 * `git status` = see which files have been edited(red) ; file(s) ready to be committed(green)
 * `git add file.txt` = add file(s) to be committed
 * `git add .` = adds current directory("." can be replaced with a file name or directory command)
-* `git commit -a “short/specific message”` = adding the file to a "confirmed" state
+* `git commit -m “short/specific message”` = adding the file to a "confirmed" state
 * `git log` = see your past commits
 * `git diff` = see differences between versions
 * `git push -u origin master`
